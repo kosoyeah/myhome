@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 
 <head>
   <meta charset="utf-8">
@@ -52,13 +52,13 @@
         <ul>
           <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
           <li><a class="nav-link scrollto" href="#about">About</a></li>
-          <li><a class="nav-link scrollto" href="#services">Favorites</a></li>
-          <li><a class="nav-link scrollto " href="#">Resume</a></li>
-          <li class="dropdown"><a href="#portfolio"><span>Portfolio</span> <i class="bi bi-chevron-down"></i></a>
+          <li class="dropdown"><a href="#services"><span>Favorites</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
-              <li><a href="#">Report</a></li>
-              <li><a href="#">Project</a></li>
+              <li data-filter=".filter-report"><a href="#">--</a></li>
+              <li ata-filter=".filter-project"><a href="#">--</a></li>
             </ul>
+          <li><a class="nav-link scrollto " href="#">Resume</a></li>
+          <li><a class="nav-link scrollto" href="#portfolio">Portfolio</a></li>
           <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
@@ -271,12 +271,13 @@
         <div class="row" data-aos="fade-up" data-aos-delay="100">
           <div class="col-lg-12 d-flex justify-content-center">
             <ul id="portfolio-flters">
-              <li data-filter="*" class="filter-active">All</li>
+              <li data-filter="*" class="filter-active">all</li>
               <li data-filter=".filter-report">report</li>
               <li data-filter=".filter-project">project</li>
             </ul>
           </div>
         </div>
+
 
         <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
 
@@ -285,10 +286,38 @@
               <img src="assets/img/report_icon/sky_blob.svg" class="img-fluid" alt="">
               <div class="portfolio-info">
                 <h4>Report 1</h4>
-                <p>CSS 없는 가입 및 로그인 페이지 만들기</p>
+                <p>CSS 없이 가입 및 로그인 페이지 만들기</p>
                 <div class="portfolio-links">
                   <a href="assets/img/report_icon/sky_blob.svg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Report01"><i class="bx bx-plus"></i></a>
                   <a href="report/Report1.html" title="More Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-project">
+            <div class="portfolio-wrap">
+              <img src="assets/img/report_icon/purple_blob.svg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Tableau Project 2</h4>
+                <p>데이터 시각화</p>
+                <div class="portfolio-links">
+                  <a href="assets/img/report_icon/purple_blob.svg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Project02"><i class="bx bx-plus"></i></a>
+                  <a href="https://public.tableau.com/views/_16761073221280/sheet2?:language=ko-KR&:display_count=n&:origin=viz_share_link" title="More Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-report">
+            <div class="portfolio-wrap">
+              <img src="assets/img/report_icon/yellow_blob.svg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Report 2</h4>
+                <p>CSS가 첨가된 가입 및 로그인 페이지 만들기</p>
+                <div class="portfolio-links">
+                  <a href="assets/img/report_icon/yellow_blob.svg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Report02"><i class="bx bx-plus"></i></a>
+                  <a href="report/Report2.html" title="More Details"><i class="bx bx-link"></i></a>
                 </div>
               </div>
             </div>
@@ -308,51 +337,6 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-report">
-            <div class="portfolio-wrap">
-              <img src="assets/img/report_icon/yellow_blob.svg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Report 2</h4>
-                <p>CSS가 첨가된 가입 및 로그인 페이지 만들기</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/report_icon/yellow_blob.svg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Report02"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-<div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-project">
-            <div class="portfolio-wrap">
-              <img src="assets/img/report_icon/purple_blob.svg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Tableau Project 2</h4>
-                <p>데이터 시각화</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/report_icon/purple_blob.svg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Project02"><i class="bx bx-plus"></i></a>
-                  <a href="https://public.tableau.com/views/_16761073221280/sheet2?:language=ko-KR&:display_count=n&:origin=viz_share_link" title="More Details"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-report">
-            <div class="portfolio-wrap">
-              <img src="assets/img/report_icon/pink_blob.svg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Report 3</h4>
-                <p>Bootstrap5을 활용한 계정 생성 페이지 만들기</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/report_icon/pink_blob.svg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Report03"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-
           <div class="col-lg-4 col-md-6 portfolio-item filter-project">
             <div class="portfolio-wrap">
               <img src="assets/img/report_icon/blue_blob.svg" class="img-fluid" alt="">
@@ -367,27 +351,21 @@
             </div>
           </div>
 
-        </div>
-
-<div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-report">
+          <div class="col-lg-4 col-md-6 portfolio-item filter-report">
             <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-6.jpg" class="img-fluid" alt="">
+              <img src="assets/img/report_icon/pink_blob.svg" class="img-fluid" alt="">
               <div class="portfolio-info">
-                <h4>Report 4</h4>
-                <p>2진수 변환기&파스칼 삼각형</p>
+                <h4>Report 3</h4>
+                <p>Bootstrap5을 활용한 계정 생성 페이지 만들기</p>
                 <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-6.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 3"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                  <a href="assets/img/report_icon/pink_blob.svg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Report03"><i class="bx bx-plus"></i></a>
+                  <a href="report/Report3.html" title="More Details"><i class="bx bx-link"></i></a>
                 </div>
               </div>
             </div>
           </div>
 
-
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-project">
+          <div class="col-lg-4 col-md-6 portfolio-item filter-project">
             <div class="portfolio-wrap">
               <img src="assets/img/report_icon/green_blob.svg" class="img-fluid" alt="">
               <div class="portfolio-info">
@@ -401,8 +379,23 @@
             </div>
           </div>
 
+          <div class="col-lg-4 col-md-6 portfolio-item filter-report">
+            <div class="portfolio-wrap">
+              <img src="assets/img/report_icon/blue_blob.svg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Report 4</h4>
+                <p>DOM을 활용한 2진수 변환기&파스칼 삼각형 그리기</p>
+                <div class="portfolio-links">
+                  <a href="assets/img/report_icon/blue_blob.svg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Report04"><i class="bx bx-plus"></i></a>
+                  <a href="report/Report4.html" title="More Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
 
-        <div class="col-lg-4 col-md-6 portfolio-item filter-project">
+
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-project">
             <div class="portfolio-wrap">
               <img src="assets/img/report_icon/yellow_blob.svg" class="img-fluid" alt="">
               <div class="portfolio-info">
@@ -415,10 +408,13 @@
               </div>
             </div>
           </div>
-      </div>
-      </div>
         </div>
+      </div>
+
+
     </section><!-- End Portfolio Section -->
+
+
 
     <!-- ======= Counts Section ======= -->
     <section id="counts" class="counts">
