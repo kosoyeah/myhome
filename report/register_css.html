@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>계정 생성하기</title>
+    <style>
+        html,body{margin: 10px;}
+        .ne{color: red;font-size: 10pt;}
+        p{font-weight: bold; background-color: lightblue; width: 800px; padding-left: 10px;}
+        label{display: inline-block; margin-left: 8px; text-align: right; width: 130px; padding-right: 8px;}
+        label span{color: red;}
+        .introduction {margin-left: 70px;margin-bottom: 10px;}
+        .submit{margin-left: 200px;}
+
+
+
+    </style>
+</head>
+<body>
+<h2>취업 정보 계정 만들기</h2>
+<p class="ne">* 필수 입력 항목</p>
+<p>기본 정보</p>
+<form name="personal_info" method="post">
+    <div id="txt_input">
+    <label for = "student_name">이름<span>*</span></label>
+    <input type="text" id="student_name" name="name" size="8" required><br>
+    <label for="student_email">이메일<span>*</span></label>
+    <input type="email" id="student_email" name="email" size="15" placeholder="id@domain_name" required><br>
+    <label for="student_pwd">암호<span>*</span></label>
+    <input type="password" id="student_pwd" name="password" size="12" required><br>
+    <label for="pwd_check">암호 확인<span>*</span></label>
+    <input type="password" id="pwd_check" name="password" size="12" required><br>
+    <label for="student_tel">모바일 폰<span>*</span></label>
+    <input type="tel" id="student_tel" name="telephone" size="13" placeholder="010-0000-0000" required><br>
+    <label for="student_url">개인 홈페이지</label>
+    <input type="url" id="student_url" name="url" size="30" placeholder="http://"><br>
+    <label for="student_address">주소<span>*</span></label>
+    <input type="text" id="student_address" name="address" size="30">
+  </div>
+
+    <p>학력</p>
+    <div id="edu_background">
+    <label for = "schoolname">학교 명<span>*</span></label>
+    <input type="text" id="schoolname" name="schoolname" size="12" required><br>
+    <label for="major">전 공<span>*</span></label>
+    <input type="text" id="major" name="major" size="12" required><br>
+    <label>졸업 여부<span>*</span></label>
+      <select name="graduation_status" id="graduation_status" required>
+        <option value="0">---선택---</option>
+        <option value="1">졸업예정</option>
+        <option value="2">졸업</option>
+      </select><br>
+    <label>졸업(예정)일</label>
+    <input type = "date">
+
+
+
+  </div>
+
+    <p>업무 경력</p>
+    <div id = "work_experience">
+    <label for = "name_company">근무업체명</label>
+    <input type="text" id="name_company" name="name_company" size="20"><br>
+    <label for="job_title">직 위</label>
+    <input type="text" id="job_title" name="job_title" size="10"><br>
+    <label for="responsibilities">담당업무</label>
+    <textarea id="responsibilities" name="responsibilities" cols="80" rows="10">이전 업체에서 담당한 업무를 기술하시오.
+    </textarea><br>
+    <label for="period">근속년수</label>
+    <input type="number" id="period" name="period" min="0" max="10" value="0" step="0.5">년<br>
+    </div>
+
+    <p>자기소개서</p>
+    <div class="introduction">
+      첨부 파일 <input type="file" id="file" name="file"></div>
+      <span style="display: inline; padding-top: 20px;">
+        <input class="submit" type="submit" value="제출"> <input type="reset" value="재작성">
+      </span>
+
+</form>
+</body>
+</html>
