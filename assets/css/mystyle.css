@@ -18,6 +18,9 @@
 
 .carousel-caption p{
     font-size: small;
+    background-color: black;
+    color: #dcdfe5;
+    opacity: 0.7;
 }
 
 .carousel-caption h5{
