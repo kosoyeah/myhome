@@ -4,4 +4,24 @@
 
 .about span{color: #842029; font-weight: bolder;}
 
-.features img{}
+.carousel .carousel-item {
+            width: 100%;
+            float: left;
+            position: relative;
+            object-fit: cover;
+            height: 300px;
+        }
+
+.carousel-caption{
+    padding-bottom: 0px;
+}
+
+.carousel-caption p{
+    font-size: small;
+}
+
+.carousel-caption h5{
+    font-weight: bold;
+    background-color: #dcdfe5;
+    color: black;
+}
